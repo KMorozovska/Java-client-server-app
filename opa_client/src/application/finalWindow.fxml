@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<SplitPane dividerPositions="0.24414715719063546" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstWindowController">
+  <items>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <ToolBar layoutX="16.0" layoutY="79.0" orientation="VERTICAL" prefHeight="398.0" prefWidth="127.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <Button fx:id="sendToServerButton" mnemonicParsing="false" onAction="#sendToServerButtonAction" prefHeight="47.0" prefWidth="133.0" text="Wybierz pliki do wysłania na serwer" textAlignment="CENTER" translateY="30.0" wrapText="true" />
+                  <Button fx:id="copyFromServerButton" mnemonicParsing="false" onAction="#copyFromServerButtonAction" prefHeight="60.0" prefWidth="133.0" text="Wybierz pliki do skopiowania z serwera" textAlignment="CENTER" translateY="30.0" wrapText="true" />
+                  <Button fx:id="deleteFromServerButton" mnemonicParsing="false" onAction="#deleteFromServerButtonAction" prefHeight="47.0" prefWidth="133.0" text="Wybierz pliki do usunięcia z serwera" textAlignment="CENTER" translateY="30.0" wrapText="true" />
+              </items>
+            </ToolBar>
+         </children></AnchorPane>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
+         <children>
+            <TabPane layoutX="-7.0" layoutY="99.0" prefHeight="398.0" prefWidth="465.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <tabs>
+                <Tab closable="false" text="Klient">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Historia operacji:" />
+                              <TableView fx:id="clientHistoryArea" layoutX="14.0" layoutY="36.0" prefHeight="312.0" prefWidth="421.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                    
+                     
+                    
+                  </Tab>
+                <Tab text="Serwer">
+                     <content>
+                        <AnchorPane prefHeight="200.0" prefWidth="200.0">
+                           <children>
+                              <Text layoutX="14.0" layoutY="27.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lista plików na serwerze:" />
+                              <TextArea fx:id="serverFilesArea" editable="false" layoutX="17.0" layoutY="38.0" prefHeight="302.0" prefWidth="418.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+              </tabs>
+            </TabPane>
+         </children></AnchorPane>
+  </items>
+</SplitPane>

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="login" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="296.0" prefWidth="443.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstWindowController">
+   <children>
+      <Button fx:id="okLoginButton" layoutX="209.0" layoutY="230.0" mnemonicParsing="false" onAction="#getPasswordAndLogin" text="OK" />
+      <TextField fx:id="passwordTextField" layoutX="176.0" layoutY="171.0" onInputMethodTextChanged="#getPassword" prefHeight="25.0" prefWidth="198.0" />
+      <Text layoutX="82.0" layoutY="144.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Login" wrappingWidth="30.990234375" />
+      <Text layoutX="82.0" layoutY="188.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Password" wrappingWidth="55.310546875" />
+      <TextField fx:id="loginTextField" layoutX="176.0" layoutY="127.0" onInputMethodTextChanged="#getLogin" prefHeight="25.0" prefWidth="198.0" />
+      <Text layoutX="129.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Podaj hasło, by kontynuować">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

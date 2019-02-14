@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.BorderPane?>
+
+<AnchorPane fx:id="firstWindow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.FirstWindowController">
+   <children>
+      <Button fx:id="myButton" layoutX="284.0" layoutY="296.0" mnemonicParsing="false" onAction="#getPortAndHost" text="OK" />
+      <TextField fx:id="myTextField2" layoutX="252.0" layoutY="218.0" onInputMethodTextChanged="#getHost" prefHeight="25.0" prefWidth="198.0" />
+      <Text layoutX="178.0" layoutY="196.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Port:" wrappingWidth="30.990234375" />
+      <Text layoutX="178.0" layoutY="235.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Host:" wrappingWidth="55.310546875" />
+      <TextField fx:id="myTextField1" layoutX="252.0" layoutY="179.0" onInputMethodTextChanged="#getPort" prefHeight="25.0" prefWidth="198.0" />
+      <MenuBar>
+        <menus>
+          <Menu mnemonicParsing="false" text="Autorzy">
+            <items>
+              <MenuItem mnemonicParsing="false" text="Kamil Borawski" />
+                  <MenuItem mnemonicParsing="false" text="Katarzyna Spalińska" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Pomoc">
+            <items>
+              <MenuItem mnemonicParsing="false" text="O programie" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Text layoutX="166.0" layoutY="141.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Wybierz numer portu i host serwera">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
